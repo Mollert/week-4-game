@@ -1,1 +1,1 @@
-# week-4-game
+I've set-up the folders and files to start
