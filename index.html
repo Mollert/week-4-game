@@ -3,7 +3,7 @@
 <head>
 	<title>Gem Game</title>
 
-	<mets charset="UTF-8">
+	<meta charset="utf-8">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,17 +13,70 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 
 </head>
 <body>
-
-
-
+	<div class="game-header">
+		<p>$$ <span><u>Play the Gem Game</u></span> $$</p>
+	</div>
+	<div class="jumbotron">
+		<img class="coal" src="assets/images/coal_cropped.jpg" alt="Coal" width="100px" height="100px">
+		<img class="coal" src="assets/images/garnet_color.jpg" alt="First Garnet" width="100px" height="100px">
+		<img class="coal" src="assets/images/garnet_color2.jpg" alt="Second Garnet" width="100px" height="100px">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="instructions">
+				<h4><p>Click on the start button to begin a new game.</p><p>A new value for you to match will appear.</p><p>Each gem has a value and as you click on them the value will be added to your running total.</p><p>To win, you will have to equal the match value.  Wins and losses are tallied.</p><p>To try a new match number, click the reset button for another chance.</p></h4>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="match">
+				<h4>Match this Number</h4>
+				<div class="match-number">
+					<h3>100</h3>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-2">
+			<div class="total">
+				<h4>Running Total</h4>
+				<div class="running-total">
+					<h3>50</h3>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-2">
+			<div class="tally">
+				<h4>Wins and Losses</h4>
+				<div class="wins">
+					<h4>W  -  <span id="win">3</span></h4>
+				</div>
+				<div class="losses">
+					<h4>L  -  <span id="loss">2</span></h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="start-reset">
+			<button class="button-start">Start A New Game</button>
+			<button class="button-reset">Try again!</button>
+		</div>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>

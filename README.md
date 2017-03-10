@@ -1,1 +1,1 @@
-I've set-up the folders and files to start
+HTML and CSS fairly well constructed.  No Javascript.
