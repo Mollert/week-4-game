@@ -1,1 +1,1 @@
-HTML and CSS fairly well constructed.  No Javascript.
+Got it working.  Just a couple of refinements left.

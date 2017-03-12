@@ -11,9 +11,37 @@ body {
 }
 
 .jumbotron {
-  background-image: url("../images/backing_vain.jpg");
+  background-image: url("../images/backing_vein.jpg");
   background-size: 100%;
-  height: 500px;
+  height: 280px;
+}
+
+#firstGem {
+  position: absolute;
+  top: 20%;
+  left: 14%;
+}
+
+#secondGem {
+  position: absolute;
+  bottom: 50%;
+  left: 34%;
+}
+
+#thirdGem {
+  position: absolute;
+  top: 20%;
+  right: 34%;
+}
+
+#fourthGem {
+  position: absolute;
+  bottom: 50%;
+  right: 14%;
+}
+
+.gem {
+    border-radius: 16px;
 }
 
 .instructions {
@@ -35,6 +63,11 @@ body {
   text-align: center;
   border-bottom-style: solid;
   border-width: medium;
+}
+
+#match-number,
+#running-total {
+  font-size: 22px; 
 }
 
 .start-reset {
