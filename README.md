@@ -1,1 +1,1 @@
-Got it working.  Just a couple of refinements left.
+Made just a few changes.  Have one more issue in that the line under the running total moves up when you first click a jewel.

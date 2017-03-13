@@ -1,6 +1,8 @@
-
+// An array of gem images
 var gems = ["assets/images/coal_black.jpg", "assets/images/gem_blue.jpg", "assets/images/gem_bronze.jpg", "assets/images/gem_rose.jpg", "assets/images/gem_deeppurple.jpg", "assets/images/gem_green.jpg", "assets/images/gem_lightpurple.jpg", "assets/images/gem_pink.jpg", "assets/images/gem_seagreen.jpg", "assets/images/gem_topaz.jpg", "assets/images/gem_yellow.jpg", "assets/images/gem_skyblue.jpg"];
 var matchNumber = 0;
+var gemAndNumber = [];
+var user = 0;
 var runningTotal = 0;
 var win = 0;
 var loss = 0;
@@ -8,33 +10,33 @@ var loss = 0;
 function getMatchNumber() {
 	matchNumber = (Math.floor(Math.random() * 101) + 18);
 }
-
+// This funciton creates a 4 digit array, checks each digit before adding it to the array so it is not a duplicate.
 function getGemAndNumber() {
 	gemAndNumber = [];
     for (i = 0; i < 4; i++) {		
-		var user = (Math.floor(Math.random() * 11) + 1);
+		user = (Math.floor(Math.random() * 11) + 1);
 		if (i === 1) {
 			while (user === gemAndNumber[0]) {
-				var user = (Math.floor(Math.random() * 11) + 1);
+				user = (Math.floor(Math.random() * 11) + 1);
 			}
 		}
 		if (i === 2) {
 			while (user === gemAndNumber[0] || user === gemAndNumber[1]) {
-				var user = (Math.floor(Math.random() * 11) + 1);
+				user = (Math.floor(Math.random() * 11) + 1);
 			}
 		}
 		if (i === 3) {
 			while (user === gemAndNumber[0] || user === gemAndNumber[1] || user === gemAndNumber[2]) {
-				var user = (Math.floor(Math.random() * 11) + 1);
+				user = (Math.floor(Math.random() * 11) + 1);
 			}
 		}
-		gemAndNumber.push(user)
+		gemAndNumber.push(user);
 	}
 }
 
 getMatchNumber();
 getGemAndNumber();
-
+// Sends the random gems and points per gem to the HTML
 function newGemAndNumber() {
 	$("#firstGem").attr("src", gems[gemAndNumber[0]-1]);
 	$("#firstGem").val(gemAndNumber[0]);
@@ -53,7 +55,7 @@ $("#match-number").html(matchNumber);
 $("#wins").html(win);
 
 $("#losses").html(loss);
-
+//Watching for the mouse click on each gem and then adding its score to the total.
 $("#firstGem").on("click", function() {
 	if (matchNumber <= runningTotal) {
 		preventDefault();
@@ -97,7 +99,7 @@ function keepScore() {
  		$("#losses").html(loss);
 	}
  }
-
+// Start new game button - clear win/loss
  $(".button-start").on("click", function() {
 	getGemAndNumber();
  	newGemAndNumber();
@@ -110,7 +112,7 @@ function keepScore() {
  	loss = 0;
  	$("#losses").html(loss);
  });
-
+// Start new game - keep win/loss
   $(".button-reset").on("click", function() {
 	getGemAndNumber();
  	newGemAndNumber();
