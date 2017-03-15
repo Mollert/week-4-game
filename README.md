@@ -1,1 +1,1 @@
-Made just a few changes.  Have one more issue in that the line under the running total moves up when you first click a jewel.
+Final Commit.  JQuery made some the JavaScript code cleaner.  Layed out the html on paper first and then all I had to do was type in the Bootstrap commands.  Need to initiate css  reset from the start.
